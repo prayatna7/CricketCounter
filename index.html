@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cricket Counter</title>
+        <!-- This is a basic Cricket Counter that counts everything that a cricket umpire has
+        to know like bowls bowled, overs, runs, wickets, wide, no bowl, etc..   -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <input id="info" placeholder="Match Information">
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div class="counter-row">
+        <button onclick="startInning()">Start Inning</button>
+        <span id="timer">00:00</span>
+        </div>
+        <div class="counter-row">
+            <button>Overs</button>
+            <button onclick="decrease()">-</button>
+            <input id="count">
+            <button onclick="increase()">+</button>
+        </div>
+        <div class="counter-row">
+            <button>Runs</button>
+            <button onclick="decRun()">-</button>
+            <input id="run">
+            <button onclick="incRun()">+</button>
+        </div>
+        <div class="counter-row">
+            <button>Wickets</button>
+            <button onclick="decWic()">-</button>
+            <input id="wic">
+            <button onclick="incWic()">+</button>
+        </div>
+        <div class="counter-row">
+            <button>Wides</button>
+            <button onclick="decWide()">-</button>
+            <input id="wide">
+            <button onclick="incWide()">+</button>
+        </div>
+        <div class="counter-row">
+            <button>No Bowl</button>
+            <button onclick="decNo()">-</button>
+            <input id="nob">
+            <button onclick="incNo()">+</button>
+        </div>
+        <script src="functions.js"></script>
+    </body>
+</html>
